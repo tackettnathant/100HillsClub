@@ -62,6 +62,11 @@ Vue.component('nav-bar',{
 			<router-link to="/faq" class="navbar-item navlink" @click.native="toggleBurger">
 	        FAQ
 	      </router-link>
+				<router-link to="/contribute" class="navbar-item navlink" @click.native="toggleBurger">
+		        Contribute
+		      </router-link>
+
+
     </div>
 		<!--<a class="navbar-item" href="https://www.instagram.com/100hillsclub/">
 		<img src="/images/instagram.png"/>

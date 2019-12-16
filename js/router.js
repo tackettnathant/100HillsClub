@@ -10,6 +10,7 @@ var routes = [
 	{path: "/group/:groupId", component:groupStats},
 	{path: "/joingroup",component:joinGroup},
 	{path: "/faq",component:faq},
+	{path: "/contribute",component:contribute},
 	{path: "/",redirect: "/hilllist"}
 ]
 const router = new VueRouter({
