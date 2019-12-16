@@ -37,6 +37,8 @@ var editHill = {
 	<br/>Latitude: <input v-model="hill.coordinates.lat"/>
 	<br/>Longitude: <input v-model="hill.coordinates.long"/>
 	<br/>Neighborhood ID: <input v-model="hill.neighborhood"/>
+	<br/>Elevation: <input v-model="hill.elevation"/>
+	<br/>Distance: <input v-model="hill.distance"/>
 	<br/>Description:<br/><textarea rows="3" style="width:100%" v-model="hill.description"></textarea>
 	<br/><button @click="save">Save</button>
 	</div>
