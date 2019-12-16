@@ -159,7 +159,7 @@ const store = new Vuex.Store({
       state.user={};
       firebase.auth().signOut();
     },
-    saveHill: function(state,himyGroupDetailsll) {
+    saveHill: function(state,hill) {
       db.collection("hill").doc(hill.id.toString()).set(hill);
     },
     createGroup: function(state,group) {
