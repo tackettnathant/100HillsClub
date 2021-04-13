@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html style="min-height:100%">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100 Hills Club</title>
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Girassol|Rajdhani|Zilla+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bulma.css"/>
+<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/regular.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/solid.min.css"/>
+<link href="/css/bulma-badge.min.css" rel="stylesheet">
+<style>
+
+div.about {
+	font-family: 'Zilla Slab', serif;
+	padding: 20px;
+	background-image: url(/images/about_bg_2.jpg);
+	background-size: cover;
+	color:white;
+	height: 100vh
+}
+div.faq {
+	font-family: 'Zilla Slab', serif;
+	padding: 20px;
+	background-color:#ffffcf;
+}
+div.contribute {
+	font-family: 'Zilla Slab', serif;
+	padding: 20px;
+	background-color:#ffffcf;
+}
+.incomplete {
+	color:#cccccc;
+}
+
+.hood-map {
+	background-image: url(/images/loader.gif');
+	background-position: center;
+	background-repeate: no-repeat;
+}
+
+header.hill-list-header {
+	font-size: 1.5em;
+	background-color: #e67540;
+	color: white;
+}
+header.hill-list-header > p{
+color:white;
+}
+.loader-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+
+        .loader {
+            height: 80px;
+            width: 80px;
+        }
+
+    &.is-active {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+	 background-color:#ffffcf;
+	 padding-top:60px;
+}
+.navlink {
+	color:#ffffff;
+	font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div id="app" style="width:100%;height:100%">
+<nav-bar></nav-bar>
+<router-view></router-view>
+</div>
+
+<script src="js/es6-promise.auto.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+<script src="js/vue.min.js"></script>
+<script src="js/vue-router.min.js"></script>
+<script src="js/vuex.min.js"></script>
+<script src="js/hills.js?q=2019121601"></script>
+<script src="js/login.js?q=2019121601"></script>
+<script src="js/edit_hills.js?q=2019121601"></script>
+<script src="js/neighborhood.js?q=2019121601"></script>
+<script src="js/about.js?q=2019121601"></script>
+<script src="js/faq.js?q=2019121601"></script>
+<script src="js/contribute.js?q=2019121601"></script>
+<script src="js/map.js?q=2019121601"></script>
+<script src="js/group.js?q=2019121601"></script>
+<script src="js/joingroup.js?q=2019121601"></script>
+<script src="js/extra.js?q=2019121601"></script>
+<script src="js/nav.js?q=2019121601"></script>
+<script src="js/auth.js?q=2019121101"></script>
+<script src="js/store.js?q=2019121101"></script>
+<script src="js/router.js?q=2019121601"></script>
+<script src="js/main.js?q=2019121601"></script>
+</body>
+</html>
